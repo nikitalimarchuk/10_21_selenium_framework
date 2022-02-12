@@ -1,0 +1,4 @@
+pytest
+sqlalchemy
+selenium
+psycopg2-binary

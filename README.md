@@ -32,36 +32,35 @@ pytest .
 ```
 # Architecture diagram of project WIP
 
-```plantuml format="png" classes="uml myDiagram" alt="My super diagram placeholder" title="My super diagram"
+```plantuml
 skinparam ClassBackgroundColor #ffd200|8cfcff
-  class Singleton {}
-  class BasePage {}
-  class DashboardPage {}
-  class TestingPage {}
-  class Cookie {}
-  class LocalStorage {}
-  class TestResultRepository {}
-  class BaseRepository {}
-  class Config {}
-  class DBConfig {}
-  class TestRaleConfig {}
-  class Driver {}
-  class PageObjectSingleton {}
-
-  BasePage -right-|> PageObjectSingleton
-  DashboardPage -up-|> BasePage
-  TestingPage -up-|> BasePage
-  Cookie -up--|> Singleton
-  LocalStorage -up--|> Singleton
-  Config -down-|> Singleton
-  DBConfig -down-|> Singleton
-  TestRaleConfig -left-|> Singleton
-  Cookie -down-* BasePage
-  LocalStorage -down--* BasePage
-  Config -down--* BasePage
-  TestRaleConfig -left-* Config
-  DBConfig -down--* Config
-  Driver -up-o DashboardPage
-  Driver -up-o TestingPage
-  TestResultRepository -up-|> BaseRepository
+class Singleton {}
+class BasePage {}
+class DashboardPage {}
+class TestingPage {}
+class Cookie {}
+class LocalStorage {}
+class TestResultRepository {}
+class BaseRepository {}
+class Config {}
+class DBConfig {}
+class TestRaleConfig {}
+class Driver {}
+class PageObjectSingleton {}
+BasePage -right-|> PageObjectSingleton
+DashboardPage -up-|> BasePage
+TestingPage -up-|> BasePage
+Cookie -up--|> Singleton
+LocalStorage -up--|> Singleton
+Config -down-|> Singleton
+DBConfig -down-|> Singleton
+TestRaleConfig -left-|> Singleton
+Cookie -down-* BasePage
+LocalStorage -down--* BasePage
+Config -down--* BasePage
+TestRaleConfig -left-* Config
+DBConfig -down--* Config
+Driver -up-o DashboardPage
+Driver -up-o TestingPage
+TestResultRepository -up-|> BaseRepository
 ```

@@ -1,21 +1,50 @@
 ## Example of selenium test framework base on pytest in functional approach
 ---
 ### Structure of project
-```
--/core
-.   +/config
-.   +/domain
-.   -/infrastructure
-.   .   +/bin  
-.   .   +/models
-.   .   +/repositories
-.   .   cookie.py
-.   .   local_storage.py
--/pages
--/tests
-conftest.py
-requirements.txt
-```
+    |-- .env
+    |-- .gitignore
+    |-- README.md
+    |-- conftest.py
+    |-- requirements.txt
+    |-- core
+    |   |-- __init__.py
+    |   |-- locator.py
+    |   |-- page_object_singleton.py
+    |   |-- singleton.py
+    |   |-- config
+    |   |   |-- __init__.py
+    |   |   |-- config.py
+    |   |   |-- db_config.py
+    |   |   |-- test_rale_config.py
+    |   |-- domain
+    |   |   |-- result.py
+    |   |-- infrastructure
+    |       |-- __init__.py
+    |       |-- cookie.py
+    |       |-- local_storage.py
+    |       |-- bin
+    |       |   |-- chromedriver
+    |       |-- models
+    |       |   |-- __init__.py
+    |       |   |-- base_model.py
+    |       |   |-- test_result.py
+    |       |-- repositories
+    |           |-- base_repository.py
+    |           |-- test_result_repository.py
+    |-- pages
+    |   |-- __init__.py
+    |   |-- c_sharp_cource_page.py
+    |   |-- base_page
+    |   |   |-- __init__.py
+    |   |   |-- base_page.py
+    |   |   |-- base_page_locators.py
+    |   |   |-- header.py
+    |   |-- dashboard_page
+    |       |-- __init__.py
+    |       |-- dashboard_locators_collection.py
+    |       |-- dashboard_page.py
+    |-- tests
+        |-- test_csharp_course.py
 ---
 ### Setup project
 1. Download compatible version of chrome driver

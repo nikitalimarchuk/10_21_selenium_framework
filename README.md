@@ -7,7 +7,7 @@
     |-- conftest.py
     |-- requirements.txt
     |-- core
-    |   |-- __init__.py
+    |   |-- __init__.pyw
     |   |-- locator.py
     |   |-- page_object_singleton.py
     |   |-- singleton.py

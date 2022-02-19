@@ -10,7 +10,11 @@ class Locator:
 
     @property
     def path(self) -> str:
+        """Returns path to locate element"""
+        
         return self.__path
 
     def to_tuple(self) -> Tuple[str, str]:
+        """Returns tuple with name of method and path"""
+
         return self.__method, self.__path

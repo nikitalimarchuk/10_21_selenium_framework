@@ -1,3 +1,4 @@
+LocalStorage -up--|> Singleton
 ## Example of selenium test framework base on pytest in functional approach
 ---
 ### Structure of project

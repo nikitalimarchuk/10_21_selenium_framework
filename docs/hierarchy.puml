@@ -16,8 +16,6 @@ class PageObjectSingleton {}
 BasePage -right-|> PageObjectSingleton
 DashboardPage -up-|> BasePage
 TestingPage -up-|> BasePage
-Cookie -up--|> Singleton
-LocalStorage -up--|> Singleton
 Config -down-|> Singleton
 DBConfig -down-|> Singleton
 TestRaleConfig -left-|> Singleton
